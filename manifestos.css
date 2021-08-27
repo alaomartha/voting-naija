@@ -1,0 +1,78 @@
+body{
+  background: whitesmoke;
+}
+*{
+  box-sizing: border-box;
+}
+.naija-flag{
+  margin: 0%;
+  transition: width 2s, height 4s, transform 5s;
+  transition-timing-function: ease-in;
+  float: right;
+}
+.naija-flag:hover{
+  width: 250px;
+  height: 150px;
+  transform: rotate(180deg);
+}
+.naija{
+  text-align: center;
+  text-shadow: 5px 5px 7px green;
+  font-family: sans-serif;
+}
+span{
+  text-align: left;
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+.ul{
+  display: none;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+padding: 12px 16px;
+z-index: 1;
+}
+.dropdown:hover .ul{
+  display: block;
+}
+.nav-links, li{
+  list-style:none;
+  font-size: 20px;
+  margin-top: 10%;
+} 
+.nav-links a{
+  text-decoration: none;
+  color: black;
+}
+.nav-links a:hover{
+  color: green ;
+}
+.mani.H4, h3{
+  text-align: center;
+  margin-top: 30px;
+}
+.lorem{
+text-align: justify;
+}
+.inec-logo{
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+}
+.pdp, .apc, .inec, .box{
+  margin-left: 50px;
+}
+footer a{
+  text-decoration: none;
+  color: red;
+}
+footer a:hover{
+  color: darkgreen;
+}
+footer{
+  background: lightgray;
+  margin: 0;
+}

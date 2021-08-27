@@ -1,0 +1,117 @@
+*{
+  box-sizing: border-box;
+}
+.naija-flag{
+  margin: 0%;
+  transition: width 2s, height 4s, transform 5s;
+  transition-timing-function: ease-in;
+  float: right;
+}
+.naija-flag:hover{
+  width: 250px;
+  height: 150px;
+  transform: rotate(180deg);
+}
+.naija{
+  text-align: center;
+  /* text-shadow: 5px 5px 7px green; */
+  font-family: sans-serif;
+  animation-name: naija;
+  animation-duration: 60s;
+  animation-timing-function: infinite;
+  animation-direction: alternate;
+}
+@keyframes naija{
+  0%{text-shadow: none;}
+  25%{text-shadow: 5px 5px 7px green;}
+}
+span{
+  text-align: left;
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+.ul{
+  display: none;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+padding: 12px 16px;
+z-index: 1;
+}
+.dropdown:hover .ul{
+  display: block;
+}
+.nav-links, li{
+  list-style:none;
+  font-size: 20px;
+  margin-top: 10%;
+} 
+.nav-links a{
+  text-decoration: none;
+  color: black;
+}
+.nav-links a:hover{
+  color: green ;
+}
+.form{
+  text-align: justify;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.form a{
+  color: black;
+}
+#link a{
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#link a:hover{
+color: green;
+}
+#candy, .names{
+  text-align: center;
+  padding: 20px;
+}
+.candy{
+  margin: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); 
+}
+.candidate-image, img{
+  width: 100%;
+  height: auto;
+}
+.candy:hover{
+  opacity: 0.8;
+}
+.inec-logo{
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+}
+.pdp, .apc, .inec, .box{
+  margin-left: 50px;
+}
+footer a{
+  text-decoration: none;
+  color: red;
+}
+footer a:hover{
+  color: darkgreen;
+}
+footer{
+  background: lightgray;
+  margin: 0;
+}
+@media screen and (min-width: 1200px){
+  .candy img{
+    width: 25%;
+    padding: 0, 6px;
+    box-shadow: none;
+    margin: 0;
+    height: auto;
+  }
+  .names{
+    text-align: justify;
+  }
+}

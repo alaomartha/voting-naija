@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css
+  ">
+  <title>Form</title>
+</head>
+<body>
+  <div class="fill">
+    <h2>PLEASE FILL THE FORM</h2>
+  </div>
+  <p>Please note that if you don't fill this form you can't proceed to vote and if you do, your vote won't be counted.</p>
+<div class="form">
+  <label for="fname">First Name <span>*</span></label>
+    <input type="text" required> <br>
+    <label for="lname">Last Name <span>*</span></label>
+    <input type="text" required><br>
+    <label for="email">Email Address <span>*</span></label>
+    <input type="email" name="email" id="" required><br>
+    <label for="Country">Country</label><span>*</span>
+    <!--countries  -->
+    <select name="country" id="">
+    <option value="Australia">Australia</option>
+    <option value="Australia">Kenya</option>
+    <option value="Australia">USA</option>
+    <option value="Australia">Korea</option>
+    <option value="Australia">Ghana</option>
+    <option value="Australia">UK</option>
+    <option value="Australia">Canada</option>
+    <option value="Australia">Spain</option>
+    <option value="Australia">Italy</option>
+    <option value="Australia">Germany</option>
+    <option value="Australia">Nigeria</option>
+    <option value="Australia">China</option>
+  </select> <br>
+  <label for="card">Reg Number</label><span>*</span>
+  <input type="text" required> 
+  <input type="submit" value="Submit">
+  </div>
+  <!-- some Js -->
+  <p id="demo"></p>
+  <p>Input your age and click the button</p>
+  <input id="age" value="18">
+  <button onclick="myAge()">Click here</button>
+  <script>
+function myAge(){
+  let age = 
+  document.getElementById("age").value;
+  let voteable; if (age < 18) voteable = "Too young to vote";
+   else{
+    voteable = "You can proceed(old enough to vote)"
+  } 
+  document.getElementById("demo").innerHTML= voteable;
+}
+  </script>
+  <div class="proceed">
+    <p>Please make sure your voters card and NIN has been scanned with the QR code before you continue so your vote can be counted and to proof that you're eligible to vote.</p>
+  <p>You can now proceed to vote, thank you for your time.</p>
+  <a href="vote.html">VOTE NOW</a>
+</div>
+<footer>
+  &copy;Designed by M@ha 2021. Website powered by <a href="http://www.inecnigeria.org" target="_blank">INEC</a>
+  <div class="inec-logo">
+    <img src="image folders/download.jpeg" alt="Ballot box" style="width: 25%;" class="box">
+    <img src="image folders/images (4).jpeg" alt="Inec's Logo" style="width: 25%;" class="inec">
+    <img src="image folders/apc.jpeg" alt="Apc's Logo" style="width: 25%;" class="apc">
+    <img src="image folders/pdp.jpeg" alt="Pdp's Logo" style="width: 25%;" class="pdp">
+  </div>
+</footer>
+</body>
+</html>

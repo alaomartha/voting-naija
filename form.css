@@ -1,0 +1,84 @@
+*{
+  box-sizing: border-box;
+}
+.fill{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(255,255,255, 0.6)), url('image folders/nigeria.jpeg');
+  width: 100%;
+  height: 400px;
+  color: white;
+  text-align: center;
+  padding: 100px;
+  background-size: cover;
+}
+.form{
+background: rgb(218, 213, 213);
+padding: 20px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+label{
+  display: inline-block;
+  padding: 12px 12px 12px 0;
+}
+input[type=text], select, input[type=email]{
+  width: 100%;
+  margin-top: 10px;
+  padding: 7px;
+  text-overflow: clip;
+  resize: vertical;
+  border-radius: 5px;
+}
+input[type=submit]{
+  float: right;
+  width: 20%;
+  margin-top: 5px ;
+  background: skyblue;
+}
+input[type=submit]:hover{
+  background: green;
+}
+span{
+  color: red;
+}
+button{
+  background: green ;
+}
+.proceed{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.proceed a{
+color: black;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-seri
+}
+.inec-logo{
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+}
+.pdp, .apc, .inec, .box{
+  margin-left: 50px;
+}
+footer a{
+  text-decoration: none;
+  color: red;
+}
+footer a:hover{
+  color: darkgreen;
+}
+footer{
+  margin-top: 30px;
+  background: lightgray;
+  margin: 0;
+}
+@media screen and (min-width:1200px){
+  input[type=text], select, input[type=email]{
+    width: 50%;
+    margin-top: 10px;
+    padding: 7px;
+    text-overflow: clip;
+    resize: vertical;
+    border-radius: 5px;
+  }
+  .proceed{
+    text-align: justify;
+  }
+}

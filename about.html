@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="about.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="section">
+    <img src="image folders/images.png" alt="Nigeria's flag" style="width: 100px;" class="naija-flag">
+    <h1 class="naija">Naija</h1>
+    <i class="fas fa-bars"></i>
+    <!-- menu -->
+    <div class="dropdown">
+     <div class="nav-links">
+       <span>Menu</span>
+       <div class="ul">
+       <ul>
+         <li><a href="vote.html">Vote</a></li>
+         <li><a href="manifestos.html">Manifestos</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="contact.html">Contact</a></li>
+       </ul>
+     </div>
+     </div>
+     </div>
+ </div>
+    <div class="slides">
+    <img src="image folders/flag.jpeg" alt="" style="width: 100%; height: 200px;"></div>
+  <div class="slides"><img src="image folders/download.jpeg" alt="" style="height: 200px; width: 100%;"></div>
+  <div class="slides"><img src="image folders/images (4).jpeg" alt="" style="height: 200px; width: 100%;">></div>
+  <div class="slides"><img src="image folders/nigeria.jpeg" alt="" style="height: 300px; width: 100%;">></div>
+
+  <script>
+    var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+
+  if (myIndex > x.length) {
+    myIndex = 1;
+  }
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+  </script>
+  <h2>ABOUT NAIJA</h2>
+
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minima reiciendis aliquid maiores voluptate itaque officia unde ut recusandae consectetur deleniti culpa, consequatur ea iure expedita blanditiis maxime dicta? Minus!
+  Delectus odio minima consectetur architecto sit, repudiandae dolorum neque numquam, corporis iusto voluptates tempore. Consequuntur dolores, aperiam odio fugit, ut commodi similique error quo aspernatur eveniet dolorum, ullam quibusdam id.
+  Ipsam laudantium repellat, quidem cupiditate id perspiciatis voluptatum sapiente facilis obcaecati accusantium aut soluta et ea facere tempore doloremque. Illum distinctio rerum atque ratione alias perspiciatis veritatis eum libero. Ex.
+  Culpa, placeat totam neque impedit incidunt, tempora a commodi unde repellendus maxime deleniti illum esse iste modi, sint nulla consequuntur debitis molestias dolore inventore laborum cupiditate nihil. Ab, eaque voluptatum.
+  Nesciunt esse amet veritatis earum eum, cupiditate beatae quo excepturi neque facilis maxime omnis tenetur harum nobis ipsum laudantium accusantium minus doloribus pariatur eligendi incidunt et repellendus? Laboriosam, voluptates debitis.
+  Facilis labore, iste officiis atque sequi eum dignissimos culpa maiores eaque dolore libero modi cupiditate ut molestiae! Id optio commodi tempore tempora nisi assumenda provident ducimus tenetur deleniti, sequi enim.
+  Repellendus, nulla impedit debitis voluptatum voluptate deserunt, voluptatem molestias delectus quaerat quas laborum doloribus optio consectetur dolore! Vel fugit recusandae rem distinctio unde eius neque officia consectetur sed? Error, eaque.
+</body>
+</html>
